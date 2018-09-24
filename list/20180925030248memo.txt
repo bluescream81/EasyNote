@@ -1,0 +1,10 @@
+{"content": "REM ファイル・フォルダ存在チェック
+IF "%fileName%" == "" (
+echo ファイルを指定しろよ
+goto label_error
+) ELSE IF NOT EXIST "%fileName%" ( 
+echo そんなファイル無いよ
+goto label_error
+) ELSE (
+echo OK
+)"}
